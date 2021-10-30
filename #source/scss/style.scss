@@ -1,0 +1,194 @@
+$maVar: #ddbcbc;
+
+
+body 
+{
+	background: $maVar;
+	font-family: sans-serif;
+	font-size: 120%;
+}
+
+.message
+{
+	width: 600px;
+	margin: 30px auto;
+
+	border: 1px solid #454343;
+	border-radius: 5px;
+
+	padding: 15px;
+	background: white;
+
+	.from 
+	{
+		font-size: 120%;
+		font-weight: bold;	
+
+		&:before 
+		{
+			content: 'від: ';
+			color: #706f6f;
+		}
+	}
+
+	hr 
+	{
+		border: none;
+		border-bottom: 1px solid #8f8c8c;
+		margin: 15px 0;
+	}
+
+	&--important
+	{
+		background: #fcc1c1;
+		border-color: #c55252;
+		hr {border-color: #c55252;}
+	}
+}
+
+
+$var1: 'family';
+$var2: serif;
+
+
+p 
+{
+	font-#{$var1}: sans-#{$var2};
+}
+
+
+
+$myVar: true;
+
+
+body 
+{
+	background: if($myVar, gray, red);
+}
+
+
+
+
+
+@for $i from 1 to 10
+{
+	.class--#{$i}
+	{
+		color: green;
+	}
+}
+
+
+$array: green, yellow, red;
+
+@each $col in $array
+{
+	.color--#{$col}
+	{
+		color: $col;
+	}
+}
+
+$buttoncolors:
+		'primary' blue,
+		'error' red,
+		'success' green;
+
+@each $btnName, $color in $buttoncolors
+{
+	.button--#{$btnName}
+	{
+		background: $color;
+		color: white;
+	}
+}
+
+main 
+{
+	width: 700px;
+	margin: 30px auto;
+}
+
+img 
+{
+	display: block;
+	margin: auto;
+
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+
+	border: 1px solid #706969;
+
+	@for $i from 1 to 10
+	{
+		&.w#{$i}
+		{
+			width: 10% * $i;
+		}
+	}
+}
+
+
+@mixin fancy
+{
+	color: red;
+	text-shadow: 0 0 15px green;
+}
+
+h1 
+{
+	@include fancy;
+}
+
+ul
+{
+	@include fancy;
+}
+
+@mixin avatar($size, $borderradius: 0, $isinvert: true)
+{
+	width: $size;
+	height: $size;
+
+	@if ($isinvert)
+	{
+		filter: invert(1)
+	}
+
+	@if ($borderradius != 0)
+	{
+		border-radius: $borderradius;
+	}
+
+	@content;
+	
+}
+
+.avatar
+{
+	@include avatar(75px, 5px)
+}
+
+.avatar-big
+{
+	@include avatar(150px, 10px)
+	{
+		margin: 50px auto;
+	}
+}
+
+.giuseppe {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto 50px;
+}
+
+.yulia {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto 50px;
+}
+
+
+

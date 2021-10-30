@@ -1,0 +1,200 @@
+@charset "UTF-8";
+body {
+  background: #ddbcbc;
+  font-family: sans-serif;
+  font-size: 120%;
+}
+
+.message {
+  width: 600px;
+  margin: 30px auto;
+  border: 1px solid #454343;
+  border-radius: 5px;
+  padding: 15px;
+  background: white;
+}
+
+.message .from {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.message .from:before {
+  content: 'від: ';
+  color: #706f6f;
+}
+
+.message hr {
+  border: none;
+  border-bottom: 1px solid #8f8c8c;
+  margin: 15px 0;
+}
+
+.message--important {
+  background: #fcc1c1;
+  border-color: #c55252;
+}
+
+.message--important hr {
+  border-color: #c55252;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+body {
+  background: gray;
+}
+
+.class--1 {
+  color: green;
+}
+
+.class--2 {
+  color: green;
+}
+
+.class--3 {
+  color: green;
+}
+
+.class--4 {
+  color: green;
+}
+
+.class--5 {
+  color: green;
+}
+
+.class--6 {
+  color: green;
+}
+
+.class--7 {
+  color: green;
+}
+
+.class--8 {
+  color: green;
+}
+
+.class--9 {
+  color: green;
+}
+
+.color--green {
+  color: green;
+}
+
+.color--yellow {
+  color: yellow;
+}
+
+.color--red {
+  color: red;
+}
+
+.button--primary {
+  background: blue;
+  color: white;
+}
+
+.button--error {
+  background: red;
+  color: white;
+}
+
+.button--success {
+  background: green;
+  color: white;
+}
+
+main {
+  width: 700px;
+  margin: 30px auto;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #706969;
+}
+
+img.w1 {
+  width: 10%;
+}
+
+img.w2 {
+  width: 20%;
+}
+
+img.w3 {
+  width: 30%;
+}
+
+img.w4 {
+  width: 40%;
+}
+
+img.w5 {
+  width: 50%;
+}
+
+img.w6 {
+  width: 60%;
+}
+
+img.w7 {
+  width: 70%;
+}
+
+img.w8 {
+  width: 80%;
+}
+
+img.w9 {
+  width: 90%;
+}
+
+h1 {
+  color: red;
+  text-shadow: 0 0 15px green;
+}
+
+ul {
+  color: red;
+  text-shadow: 0 0 15px green;
+}
+
+.avatar {
+  width: 75px;
+  height: 75px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  border-radius: 5px;
+}
+
+.avatar-big {
+  width: 150px;
+  height: 150px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.giuseppe {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 50px;
+}
+
+.yulia {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
